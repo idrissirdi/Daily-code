@@ -1,0 +1,11 @@
+integer x
+x=RandomNumber(1, 100)
+//also you can do if x%3==0 and x%5==0
+if  x%15==0
+   Put "fizzbuzz" to output
+elseif x%5==0
+   Put "buzz" to output
+elseif x%3==0
+   Put "fizz" to output
+else
+   Put x to output
