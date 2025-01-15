@@ -1,0 +1,45 @@
+public class fizzbuzzv1 {
+    public static void main(String[] args) {
+        int fifteen = 15;
+        int five = 5;
+        int three =3;
+        int mynum = 47;
+        if (mynum%fifteen==0){
+        System.out.println("fizzbuzz");}
+        else if(mynum%five==0){
+        System.out.println("buzz");}
+        else if (mynum%three==0){
+        System.out.println("fizz");}
+        else 
+        System.err.println(mynum);
+        mynum = 15;
+        if (mynum%fifteen==0){
+        System.out.println("fizzbuzz");}
+        else if(mynum%five==0){
+        System.out.println("buzz");}
+        else if (mynum%three==0){
+        System.out.println("fizz");}
+        else 
+        System.err.println(mynum);
+        mynum = 5;
+        if (mynum%fifteen==0){
+        System.out.println("fizzbuzz");}
+        else if(mynum%five==0){
+        System.out.println("buzz");}
+        else if (mynum%three==0){
+        System.out.println("fizz");}
+        else 
+        System.err.println(mynum);
+        mynum = 3;
+        if (mynum%fifteen==0){
+        System.out.println("fizzbuzz");}
+        else if(mynum%five==0){
+        System.out.println("buzz");}
+        else if (mynum%three==0){
+        System.out.println("fizz");}
+        else 
+        System.err.println(mynum);
+    };
+    
+    
+}
