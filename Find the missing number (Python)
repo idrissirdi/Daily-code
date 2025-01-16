@@ -1,0 +1,20 @@
+import random
+legthnum=random.randint(1,16)
+numlist=[i for i in range(1,legthnum)]
+deletenumber=random.choice(numlist)
+numlist.remove(deletenumber)
+print(numlist)
+print("____________________________________________________________________________")
+def nummissing(numlist, legthnum):
+    expected = set(range(1,legthnum))
+    current= set(numlist)
+    missing= expected-current
+    if missing:
+        missing=missing.pop()
+        for i in range(len(numlist)):
+            if numlist[i]>missing:
+                numlist.insert(i,missing)
+                return
+        numlist.append(missing)
+nummissing(numlist,legthnum)
+print(numlist)
