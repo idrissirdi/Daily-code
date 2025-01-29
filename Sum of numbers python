@@ -1,0 +1,6 @@
+num=input("enter number")
+sum1=0
+for number in num:
+    if number.isdigit():
+        sum1+=int(number)
+print(sum1)
