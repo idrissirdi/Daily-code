@@ -1,4 +1,13 @@
-let input =prompt("enter word")
-let number = input.length
-for (let i = number; i >= 0; i--) 
-    { console.log(i); }
+function myFunction() {
+    const regex = /[A-Z,a-z]/g;
+     let input =prompt("enter word");
+    let number = input.length;
+    while (!regex.test(input)) 
+    { userInput = prompt("invalid please enter a real word"); }
+   
+    for (let i = number; i >= 0; i--) 
+        { console.log(i); }
+        
+}
+myFunction();
+        
