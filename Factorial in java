@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class factorial{
+    static int factorial1(int n){
+     int res=1,i;
+        for(i=2; i <=n; i++)
+            res*=i;
+        return res;
+       }
+     public static void main(String[] args) {
+        System.out.println("Enter number");
+        Scanner input = new Scanner(System.in);
+        int number = input.nextInt();
+        System.out.println("Factorial of "+number+" is "+factorial1(number));
+       }
+    
+}
