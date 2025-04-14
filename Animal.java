@@ -148,6 +148,7 @@ class Reptile extends Animal{
     Animal cat= new Cat("Whiskers");
         System.out.println(dog);dog.speak();
         System.out.println(cat);cat.speak();
-        dog.equals(new Dog("buddy"));
+        boolean buddy = new Dog("buddy").equals(dog);
+        System.out.println("If they are the same it will say true if they arent it will say false so the awnser is: "+buddy);
     };
 };
