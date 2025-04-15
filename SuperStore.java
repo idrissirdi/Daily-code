@@ -98,24 +98,25 @@ static class Grocery extends SuperStore{
             Toy product3 = new Toy("Toy Car", 10.99, 12);
             Coupon coupon = new Coupon(product1,0.1);
             SuperStore[] products = {product1,product2,product3};
+            System.out.println("\033[1mOur products are:\033[0m ");
             for(SuperStore product:products){
                 System.out.println(product);
 
                 if(product.equals(product1)){
-                    System.out.println("The TV and or product 1 share the same ID ,WE HAVE DEEMED They are the same");
+                    System.out.println("\033[1mThe "+ product +" and or product 1 share the same ID ,WE HAVE DEEMED They are the same\033[0m");
                 }
                 else{
-                    System.out.println("The TV and or product 1 do not share the same ID ,WE HAVE DEEMED They are not the same");
+                    System.out.println("\033[1mThe "+product+" and or product 1 do not share the same ID ,WE HAVE DEEMED They are not the same\033[0m");
                 }
             }
-            System.out.println(coupon);
+
         }
     }
     static class Coupon{
          double discountRate;
          public Coupon(SuperStore product,double discountRate){
-             System.out.println("The discount rate is: "+discountRate);
-             System.out.println("The product is: "+product);
+             System.out.println("Todays discount rate is: "+discountRate);
+             System.out.println("For: "+product);
              System.out.println("discount Applied");
              product.price=product.price-product.price*discountRate;
              System.out.println("The new price is: "+product.price);
